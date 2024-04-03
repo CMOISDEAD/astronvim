@@ -41,6 +41,4 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  -- utility
-  { import = "astrocommunity.utility.noice-nvim" },
 }
