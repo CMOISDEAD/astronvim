@@ -41,4 +41,6 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  -- startup
+  { import = "astrocommunity.startup.mini-starter" },
 }
