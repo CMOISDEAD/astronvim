@@ -1,6 +1,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  --[[  { "AstroNvim/astrocommunity", dev = true }, ]]
   { import = "astrocommunity.pack.lua" },
 
   -- bars and lines
@@ -43,4 +44,6 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- startup
   { import = "astrocommunity.startup.mini-starter" },
+  -- scrolling
+  { import = "astrocommunity.scrolling.neoscroll-nvim" },
 }
