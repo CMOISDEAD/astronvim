@@ -30,8 +30,12 @@ return {
   { import = "astrocommunity.pack.quarto" },
   { import = "astrocommunity.pack.full-dadbod" },
   -- workflow
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  {
+    import = "astrocommunity.workflow.hardtime-nvim",
+    enabled = false,
+  },
   -- motion
+  { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.marks-nvim" },
@@ -46,4 +50,33 @@ return {
   { import = "astrocommunity.startup.mini-starter" },
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  -- utility
+  { import = "astrocommunity.utility.noice-nvim" },
+  {
+    "noice.nvim",
+    opts = {
+      routes = {
+        {
+          filter = {
+            event = "msg_show",
+            any = {
+              { find = "%d+L, %d+B" },
+              { find = "; after #%d+" },
+              { find = "; before #%d+" },
+              { find = "%d fewer lines" },
+              { find = "%d more lines" },
+            },
+          },
+          view = "mini",
+        },
+        {
+          filter = {
+            event = "msg_show",
+            min_height = 20,
+          },
+          view = "messages",
+        },
+      },
+    },
+  },
 }
