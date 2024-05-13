@@ -11,13 +11,14 @@ return {
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.mini-base16" },
   { import = "astrocommunity.colorscheme.melange-nvim" },
+  { import = "astrocommunity.colorscheme.mellifluous-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
   -- editor plugins
-  { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
-  { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- git
   { import = "astrocommunity.git.neogit" },
   -- markdown & latex
@@ -28,6 +29,7 @@ return {
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.quarto" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.full-dadbod" },
   -- workflow
   {
@@ -35,7 +37,6 @@ return {
     enabled = false,
   },
   -- motion
-  { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.marks-nvim" },
@@ -50,6 +51,8 @@ return {
   { import = "astrocommunity.startup.mini-starter" },
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  -- recipes
+  { import = "astrocommunity.recipes.neovide" },
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
   {
