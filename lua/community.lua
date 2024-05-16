@@ -19,6 +19,8 @@ return {
   { import = "astrocommunity.editing-support.yanky-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  -- programming language support
+  { import = "astrocommunity.programming-language-support.rest-nvim" },
   -- git
   { import = "astrocommunity.git.neogit" },
   -- markdown & latex
@@ -29,8 +31,26 @@ return {
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.quarto" },
-  { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.full-dadbod" },
+  -- note taking
+  { import = "astrocommunity.note-taking.neorg" },
+  {
+    "nvim-neorg/neorg",
+    opts = {
+      load = {
+        ["core.dirman"] = { -- Manages Neorg workspaces
+          config = {
+            workspaces = {
+              dev = "~/projects/dev",
+              notes = "~/projects/notes",
+              college = "~/projects/college/",
+            },
+          },
+        },
+      },
+    },
+  },
   -- workflow
   {
     import = "astrocommunity.workflow.hardtime-nvim",
