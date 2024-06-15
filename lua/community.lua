@@ -70,7 +70,7 @@ return {
   -- startup
   { import = "astrocommunity.startup.mini-starter" },
   -- scrolling
-  { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
   -- recipes
   { import = "astrocommunity.recipes.neovide" },
   -- utility
