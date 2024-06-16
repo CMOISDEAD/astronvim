@@ -34,23 +34,23 @@ return {
   -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.full-dadbod" },
   -- note taking
-  { import = "astrocommunity.note-taking.neorg" },
-  {
-    "nvim-neorg/neorg",
-    opts = {
-      load = {
-        ["core.dirman"] = { -- Manages Neorg workspaces
-          config = {
-            workspaces = {
-              dev = "~/projects/dev",
-              notes = "~/projects/notes",
-              college = "~/projects/college/",
-            },
-          },
-        },
-      },
-    },
-  },
+  -- { import = "astrocommunity.note-taking.neorg" },
+  -- {
+  --   "nvim-neorg/neorg",
+  --   opts = {
+  --     load = {
+  --       ["core.dirman"] = { -- Manages Neorg workspaces
+  --         config = {
+  --           workspaces = {
+  --             dev = "~/projects/dev",
+  --             notes = "~/projects/notes",
+  --             college = "~/projects/college/",
+  --           },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
   -- workflow
   {
     import = "astrocommunity.workflow.hardtime-nvim",
@@ -68,7 +68,7 @@ return {
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- startup
-  { import = "astrocommunity.startup.mini-starter" },
+  -- { import = "astrocommunity.startup.mini-starter" },
   -- scrolling
   -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
   -- recipes
