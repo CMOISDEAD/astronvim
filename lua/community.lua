@@ -78,6 +78,11 @@ return {
   {
     "noice.nvim",
     opts = {
+      lsp = {
+        hover = {
+          silent = true,
+        },
+      },
       routes = {
         {
           filter = {

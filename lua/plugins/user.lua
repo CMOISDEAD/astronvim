@@ -3,7 +3,6 @@ return {
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
-      -- customize the dashboard header
       opts.section.header.val = {
         "             \\                                      [            ",
         "              @                 ⟡                  ╢             ",
@@ -22,6 +21,8 @@ return {
         "  C                                                            j ",
         "   L                                                          ]  ",
       }
+      opts.section.buttons.val = {}
+      opts.section.footer = {}
       return opts
     end,
   },
