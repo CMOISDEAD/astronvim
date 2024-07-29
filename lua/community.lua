@@ -20,7 +20,7 @@ return {
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- programming language support
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
+  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
   -- git
   { import = "astrocommunity.git.neogit" },
   -- markdown & latex

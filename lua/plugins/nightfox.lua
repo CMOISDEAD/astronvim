@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     options = {
-      transparent = true,
+      transparent = false,
       dim_inactive = false,
       styles = {
         comments = "italic",
