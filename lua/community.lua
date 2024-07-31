@@ -4,11 +4,8 @@ return {
   --[[  { "AstroNvim/astrocommunity", dev = true }, ]]
   { import = "astrocommunity.pack.lua" },
 
-  -- bars and lines
-  { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
-  -- colorscheme
-  { import = "astrocommunity.color.transparent-nvim" },
-  { import = "astrocommunity.colorscheme.everforest" },
+  -- colorscheme / icons
+  { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.colorscheme.mini-base16" },
   { import = "astrocommunity.colorscheme.melange-nvim" },
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
@@ -16,13 +13,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua" },
   -- editor plugins
   { import = "astrocommunity.editing-support.neogen" },
-  { import = "astrocommunity.editing-support.yanky-nvim" },
-  { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  -- programming language support
-  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
-  -- git
-  { import = "astrocommunity.git.neogit" },
   -- markdown & latex
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
@@ -30,35 +21,10 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.typst" },
-  { import = "astrocommunity.pack.quarto" },
-  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.full-dadbod" },
-  -- note taking
-  -- { import = "astrocommunity.note-taking.neorg" },
-  -- {
-  --   "nvim-neorg/neorg",
-  --   opts = {
-  --     load = {
-  --       ["core.dirman"] = { -- Manages Neorg workspaces
-  --         config = {
-  --           workspaces = {
-  --             dev = "~/projects/dev",
-  --             notes = "~/projects/notes",
-  --             college = "~/projects/college/",
-  --           },
-  --         },
-  --       },
-  --     },
-  --   },
-  -- },
-  -- workflow
-  {
-    import = "astrocommunity.workflow.hardtime-nvim",
-    enabled = false,
-  },
+  { import = "astrocommunity.pack.typescript" },
   -- motion
   { import = "astrocommunity.motion.hop-nvim" },
-  { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   -- code
@@ -67,44 +33,4 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  -- startup
-  -- { import = "astrocommunity.startup.mini-starter" },
-  -- scrolling
-  -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
-  -- recipes
-  { import = "astrocommunity.recipes.neovide" },
-  -- utility
-  { import = "astrocommunity.utility.noice-nvim" },
-  {
-    "noice.nvim",
-    opts = {
-      lsp = {
-        hover = {
-          silent = true,
-        },
-      },
-      routes = {
-        {
-          filter = {
-            event = "msg_show",
-            any = {
-              { find = "%d+L, %d+B" },
-              { find = "; after #%d+" },
-              { find = "; before #%d+" },
-              { find = "%d fewer lines" },
-              { find = "%d more lines" },
-            },
-          },
-          view = "mini",
-        },
-        {
-          filter = {
-            event = "msg_show",
-            min_height = 20,
-          },
-          view = "messages",
-        },
-      },
-    },
-  },
 }
