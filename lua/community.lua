@@ -9,8 +9,9 @@ return {
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
-  -- editor plugins
+  -- editing support
   { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.undotree" },
   -- markdown & latex
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
