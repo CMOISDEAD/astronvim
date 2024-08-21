@@ -10,7 +10,7 @@ return {
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
   -- file explorer
-  { import = "astrocommunity.file-explorer.mini-files" },
+  -- { import = "astrocommunity.file-explorer.mini-files" }, -- for some reason stop working
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },
