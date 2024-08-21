@@ -9,6 +9,8 @@ return {
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
+  -- file explorer
+  { import = "astrocommunity.file-explorer.mini-files" },
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },
