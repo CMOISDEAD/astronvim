@@ -8,6 +8,10 @@ local headers = {
  ...___        ``--..__ `--..__`--/__/  --'__..--' __..--''        ___... 
        ```---...___    ``--..__`_(<_   _/)_'__..--''    ___...---'''      
   ```-----....._____```---...___(____|_/__)___...---'''_____.....-----''' 
+                                    ___
+                                     |
+                                     |
+  "Virtue is what you do when nobody is looking. The rest is marketing."
   ]],
 }
 
@@ -117,7 +121,7 @@ return {
 
     local bottom_section = {
       type = "text",
-      val = "Hi DOOM, It's " .. os.date " %H:%M " .. "How are you doing today?",
+      val = "The true test of a man’s character is what he does when no one is watching.",
       opts = { position = "center" },
     }
 
