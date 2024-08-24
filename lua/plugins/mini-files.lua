@@ -1,4 +1,4 @@
-if true then return {} end -- disable this file because mini-files in astronvim a bug where close and dont open again
+if true then return {} end
 
 return {
   "echasnovski/mini.files",
@@ -18,6 +18,9 @@ return {
         },
       },
     },
+  },
+  specs = {
+    { "neotree", optional = true, enabled = false },
   },
   opts = {},
 }

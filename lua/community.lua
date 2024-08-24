@@ -6,11 +6,11 @@ return {
 
   -- colorscheme / icons
   { import = "astrocommunity.icon.mini-icons" },
+  { import = "astrocommunity.colorscheme.mini-base16" },
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
+  { import = "astrocommunity.colorscheme.solarized-osaka-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
-  -- file explorer
-  -- { import = "astrocommunity.file-explorer.mini-files" }, -- for some reason stop working
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },
