@@ -34,6 +34,7 @@ return {
         files = "",
         open_folder = "",
         config = "",
+        lazy = "󰒲",
         git = "",
         close = "",
       },
@@ -100,15 +101,11 @@ return {
     local buttons = {
       type = "group",
       val = {
-        dashboard.button("n", icons.ui.file .. "  New file", "<cmd>new<CR>"),
+        dashboard.button("n", icons.ui.file .. "  New File", "<cmd>new<CR>"),
         dashboard.button("o", icons.ui.files .. "  Recent Files", "<cmd>Telescope oldfiles<cr>"),
-        dashboard.button(
-          "c",
-          icons.ui.config .. "  Neovim config",
-          "<cmd>Oil /home/cafebabe/install/dotfiles/config/nvim<cr>"
-        ),
-        dashboard.button("l", "󰒲  Lazy", "<cmd>Lazy<cr>"),
-        dashboard.button("q", icons.ui.close .. "  Quit NVIM", ":qa<CR>"),
+        dashboard.button("c", icons.ui.config .. "  Neovim Config", "<cmd>Oil /home/camilo/.config/nvim<cr>"),
+        dashboard.button("l", icons.ui.lazy .. " Lazy", "<cmd>Lazy<cr>"),
+        dashboard.button("q", icons.ui.close .. "  Quit", ":qa<CR>"),
       },
     }
 
