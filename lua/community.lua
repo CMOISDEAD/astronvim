@@ -14,6 +14,9 @@ return {
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },
+  -- git
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.diffview-nvim" },
   -- markdown & latex
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },

@@ -20,6 +20,7 @@ local ignore_filetypes = {
   "NeogitPopup",
   "NeogitCommitMessage",
   "OverseerList",
+  "DiffviewFiles",
 }
 
 local ignore_buftypes = { "nofile", "prompt", "popup" }
