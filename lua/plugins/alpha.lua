@@ -8,10 +8,10 @@ local headers = {
  ...___        ``--..__ `--..__`--/__/  --'__..--' __..--''        ___... 
        ```---...___    ``--..__`_(<_   _/)_'__..--''    ___...---'''      
   ```-----....._____```---...___(____|_/__)___...---'''_____.....-----''' 
-                                    ___
-                                     |
-                                     |
-  "Virtue is what you do when nobody is looking. The rest is marketing."
+                                    
+                                    
+                                    
+                      "God has a destiny for everyone"
   ]],
 }
 
@@ -109,17 +109,18 @@ return {
       },
     }
 
+    local bottom_section = {
+      type = "text",
+      val = "The true test of a man’s character is what he does when no one is watching.",
+      opts = { position = "center", hl = "Comment" },
+    }
+
     -- Custom footer showing number of plugins loaded
+
     local footer = {
       type = "text",
       val = { "⚡" .. require("lazy").stats().loaded .. " plugins loaded." },
       opts = { position = "center", hl = "Comment" },
-    }
-
-    local bottom_section = {
-      type = "text",
-      val = "The true test of a man’s character is what he does when no one is watching.",
-      opts = { position = "center" },
     }
 
     -- Setting up the alpha layout

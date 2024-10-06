@@ -9,6 +9,9 @@ return {
   { import = "astrocommunity.colorscheme.mini-base16" },
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
   { import = "astrocommunity.colorscheme.solarized-osaka-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- utility
+  -- { import = "astrocommunity.utility.noice-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
   -- editing support
@@ -22,6 +25,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- pack
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.quarto" },

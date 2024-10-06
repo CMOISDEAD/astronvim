@@ -1,5 +1,4 @@
-if true then return {} end
-
+---@type LazySpec
 return {
   "echasnovski/mini.files",
   dependencies = {
