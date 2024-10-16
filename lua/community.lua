@@ -14,6 +14,7 @@ return {
   -- { import = "astrocommunity.utility.noice-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
+  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },

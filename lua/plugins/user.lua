@@ -1,11 +1,6 @@
 ---@type LazySpec
 return {
   {
-    "mattn/emmet-vim",
-    lazy = false,
-    enabled = false,
-  },
-  {
     "danilamihailov/beacon.nvim",
     lazy = false,
   },

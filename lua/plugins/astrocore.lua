@@ -1,3 +1,5 @@
+local cmp = require "cmp"
+
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
@@ -20,6 +22,10 @@ return {
     -- vim options can be configured here
     options = {
       opt = {
+        mouse = "",
+        cmdheight = 0, -- sets vim.opt.cmdheight
+        formatexpr = "",
+        formatprg = "jq",
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
@@ -54,10 +60,11 @@ return {
           desc = "Previous buffer",
         },
       },
-      t = {
-        -- setting a mapping to false will disable it
-        -- ["<esc>"] = false,
+      i = {
+        ["<C-j>"] = cmp.mapping.select_next_item(),
+        ["<C-k>"] = cmp.mapping.select_prev_item(),
       },
+      t = {},
     },
   },
 }
