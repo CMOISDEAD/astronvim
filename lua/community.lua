@@ -6,42 +6,27 @@ return {
 
   -- colorscheme / icons
   { import = "astrocommunity.icon.mini-icons" },
-  { import = "astrocommunity.colorscheme.mini-base16" },
-  { import = "astrocommunity.colorscheme.mellifluous-nvim" },
-  { import = "astrocommunity.colorscheme.solarized-osaka-nvim" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.gruvbox-baby" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- utility
-  -- { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
-  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },
   -- git
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" },
-  -- markdown & latex
-  { import = "astrocommunity.markdown-and-latex.vimtex" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- pack
-  { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.dart" },
-  { import = "astrocommunity.pack.astro" },
-  { import = "astrocommunity.pack.typst" },
-  { import = "astrocommunity.pack.quarto" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.full-dadbod" },
   -- motion
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
-  -- code
-  { import = "astrocommunity.code-runner.overseer-nvim" },
   -- media
   { import = "astrocommunity.media.vim-wakatime" },
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  -- lsp
-  { import = "astrocommunity.lsp.garbage-day-nvim" },
 }

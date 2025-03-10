@@ -91,9 +91,9 @@ return {
 
     local git_branch_section, commit_history = format_git_header()
 
-    for _, line in ipairs(commit_history) do
-      ascii_header = ascii_header .. "\n" .. string.rep(" ", 3) .. line
-    end
+    -- for _, line in ipairs(commit_history) do
+    --   ascii_header = ascii_header .. "\n" .. string.rep(" ", 3) .. line
+    -- end
 
     local custom_header = center_header(ascii_header)
     local header = { type = "text", val = custom_header }
@@ -128,8 +128,8 @@ return {
       layout = {
         pad(4),
         header,
-        pad(1),
-        git_branch_section,
+        -- pad(1),
+        -- git_branch_section,
         pad(2),
         buttons,
         pad(2),

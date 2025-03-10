@@ -44,13 +44,15 @@ return {
         vimtex_view_method = "zathura",
         user_emmet_leader_key = "<C-Z>",
         neovide_fullscreen = false,
-        neovide_transparency = 0.8,
+        neovide_transparency = 0.9,
       },
     },
     mappings = {
       n = {
         ["<C-u>"] = { "<C-u>zz" },
         ["<C-d>"] = { "<C-d>zz" },
+        ["<C-S-C>"] = { "+y", desc = "Copy system clipboard" },
+        ["<C-S-V>"] = { "+p", desc = "Paste system clipboard" },
         L = {
           function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
           desc = "Next buffer",
@@ -64,7 +66,9 @@ return {
         ["<C-j>"] = cmp.mapping.select_next_item(),
         ["<C-k>"] = cmp.mapping.select_prev_item(),
       },
-      t = {},
+      c = {
+        ["<C-S-V>"] = { "<C-R>+" }, -- paste from clipboard on command mode (neovide)
+      },
     },
   },
 }
