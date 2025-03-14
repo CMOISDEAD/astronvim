@@ -12,6 +12,10 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
+  -- file explorer
+  { import = "astrocommunity.file-explorer.mini-files" },
+  -- notes
+  { import = "astrocommunity.note-taking.neorg" },
   -- editing support
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.undotree" },

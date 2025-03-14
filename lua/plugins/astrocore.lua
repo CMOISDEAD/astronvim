@@ -1,5 +1,3 @@
-local cmp = require "cmp"
-
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
@@ -32,7 +30,7 @@ return {
         spelllang = { "en_us", "es_es" },
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = true, -- sets vim.opt.wrap
-        -- showtabline = 1, -- disable tabline
+        showtabline = 1, -- disable tabline
       },
       g = {
         autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
@@ -61,10 +59,6 @@ return {
           function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
           desc = "Previous buffer",
         },
-      },
-      i = {
-        ["<C-j>"] = cmp.mapping.select_next_item(),
-        ["<C-k>"] = cmp.mapping.select_prev_item(),
       },
       c = {
         ["<C-S-V>"] = { "<C-R>+" }, -- paste from clipboard on command mode (neovide)
