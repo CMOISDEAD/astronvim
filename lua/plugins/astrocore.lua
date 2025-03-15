@@ -30,7 +30,7 @@ return {
         spelllang = { "en_us", "es_es" },
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = true, -- sets vim.opt.wrap
-        showtabline = 1, -- disable tabline
+        -- showtabline = 1, -- disable tabline
       },
       g = {
         autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)

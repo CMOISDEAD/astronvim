@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- utility
-  { import = "astrocommunity.utility.noice-nvim" },
+  -- { import = "astrocommunity.utility.noice-nvim" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
   -- file explorer
